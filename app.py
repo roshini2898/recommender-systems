@@ -21,7 +21,7 @@ template = PromptTemplate(
     template=demo_template
 )
 
-llm=ChatGoogleGenerativeAI(model="gemini-pro",api_key="GOOGLE-API-KEY")
+llm=ChatGoogleGenerativeAI(model="gemini-pro",api_key=os.getenv("GOOGLE-API-KEY"))
 
 if user_input:
     prompt = template.format(user_input=user_input)

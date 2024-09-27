@@ -1,3 +1,5 @@
 streamlit
 google-generativeai
 python-dotenv
+lanchain 
+langchain_google_genai
